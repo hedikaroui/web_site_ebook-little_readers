@@ -1,0 +1,196 @@
+<style>
+        body {
+            background-color: theme('colors.background');
+        }
+    </style><div data-screen class="antialiased text-on-background min-h-screen flex flex-col">
+<!-- TopAppBar (Shared Component) -->
+<header class="bg-surface text-primary shadow-sm flex justify-between items-center px-margin-desktop py-4 w-full sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<button class="hover:bg-surface-variant p-2 rounded-full transition-colors scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="menu">menu</span>
+</button>
+<span class="font-headline-md text-headline-md font-bold text-primary cursor-pointer">Little Readers</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-full hover:bg-surface-variant transition-colors scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="search">search</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-variant transition-colors scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<!-- Active State: Person -->
+<button class="p-2 rounded-full bg-secondary-fixed/20 transition-colors scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-secondary" data-icon="person" style="font-variation-settings: 'FILL' 1;">person</span>
+</button>
+</div>
+</header>
+<!-- Main Layout -->
+<div class="max-w-[1200px] w-full mx-auto px-margin-desktop py-16 flex flex-col lg:flex-row gap-12 flex-1">
+<!-- Left Sidebar Navigation -->
+<aside class="w-full lg:w-64 shrink-0">
+<nav class="flex flex-col gap-2 sticky top-32">
+<a class="flex items-center gap-3 px-4 py-3 rounded-full text-on-surface-variant hover:bg-surface-container transition-colors font-label-md text-label-md group" href="#">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">grid_view</span>
+                    Overview
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full text-on-surface-variant hover:bg-surface-container transition-colors font-label-md text-label-md group" href="#">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">face</span>
+                    My Children
+                </a>
+<!-- Active Navigation Item -->
+<a class="flex items-center gap-3 px-4 py-3 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md shadow-sm" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+                    Orders
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full text-on-surface-variant hover:bg-surface-container transition-colors font-label-md text-label-md group" href="#">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">favorite</span>
+                    Wishlist
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-full text-on-surface-variant hover:bg-surface-container transition-colors font-label-md text-label-md group" href="#">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">settings</span>
+                    Account Settings
+                </a>
+</nav>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1">
+<!-- Header Section with Mascot -->
+<div class="flex items-end gap-6 mb-10">
+<div class="w-20 h-20 rounded-full overflow-hidden border-4 border-surface shadow-sm shrink-0 bg-surface-container-low">
+<img alt="Lumi the Owl Mascot" class="w-full h-full object-cover" data-alt="A highly detailed vector illustration of a cute, friendly owl mascot named Lumi. The owl is styled in soft pastel blues and warm creams, looking helpful and welcoming towards the viewer. The artwork is set against a clean, light background, embodying a modern, soft tactile design suitable for a premium children's educational platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9bqcZXBcYGwP1U67a_5a4srAiHvuRXpOf_8aKsKdKF6RKUKQpe5cbrGZ5yIsqd-nIBn6r1B9Z8dtXO2j6XtInVfEUowUoW7dnrd5uAX7QWtql_2P9IQSp9mmdb5xhY1wwaB5l9iOqIgncbYzmUpVk8_PYlbe1MFxWEFc69_CjdSJh25t2BB3Tp1wngHiFpAqs5MmGxRhsCUSQxczsHIXzNdzGxKoyjHwhv5aPiBBySs0C-uJeMxqccKiSTYulbh-wJCFOzQdNmBdc"/>
+</div>
+<div class="bg-surface px-6 py-4 rounded-2xl rounded-bl-none shadow-sm border border-outline-variant/30 relative">
+<h1 class="font-display-lg text-display-lg text-primary mb-1">My Orders</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Here is a complete history of your reading adventures. Need help tracking a package?</p>
+</div>
+</div>
+<!-- Order Cards List -->
+<div class="flex flex-col gap-8">
+<!-- Order Card 1: Processing/In Transit -->
+<article class="bg-surface rounded-2xl shadow-sm border border-outline-variant/30 overflow-hidden flex flex-col">
+<!-- Card Header -->
+<div class="bg-surface-container-low px-8 py-5 border-b border-outline-variant/30 flex flex-wrap justify-between items-center gap-4">
+<div class="flex flex-wrap gap-8">
+<div>
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">Order Placed</p>
+<p class="font-body-md text-body-md text-on-surface">October 26, 2024</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">Total</p>
+<p class="font-body-md text-body-md text-on-surface">£24.99</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">Dispatch To</p>
+<p class="font-body-md text-body-md text-secondary hover:underline cursor-pointer">Home Address</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">Order #LR-88392</p>
+<a class="font-label-md text-label-md text-secondary hover:text-secondary-container transition-colors" href="#">View Invoice</a>
+</div>
+</div>
+<!-- Card Body -->
+<div class="p-8">
+<div class="flex justify-between items-start mb-6">
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Arriving Tomorrow</h3>
+</div>
+<button class="px-6 py-3 rounded-full bg-secondary text-on-primary font-label-md text-label-md hover:bg-secondary-container transition-colors shadow-sm active:scale-95">
+                                Track Order
+                            </button>
+</div>
+<div class="flex gap-6 items-center">
+<div class="w-24 h-32 rounded-lg overflow-hidden border border-outline-variant/20 shrink-0 bg-surface-container">
+<img alt="Book Cover" class="w-full h-full object-cover" data-alt="A beautiful, hardcover children's book displaying an illustration of space and planets. The book is presented on a clean, warm cream surface with soft, diffused ambient lighting. The style is modern corporate mixed with soft tactile elements, emphasizing a premium educational product ready for shipment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC9zsmFsnSsO8dFdYNqpTmouLVVkz_jSLqCoFRp_AxiGiC6gijQZ1feHf_aZClTZYV7rsDRi4NDFy1ZPpvMHHrRHiAmA9xkhs8TxFtwJxXZKwiXv9QfN2QdWuom_DjdwHtzQ04R_0Ib1wIpdYjWMHXrvZPW5dfr4ZX1KsA5MNcjcn-ffB9RE89R7w0OTaEpL9G7zw-F1VWshgJ4587BD3rvgAX-3Yk1oBt9lXikEApLZ_SGmVDj2HV68B2ZqGDMakqSnw2FMTKaVGU"/>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">The Great Cosmic Adventure</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">By Dr. Stella Nova</p>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">Qty: 1</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Order Card 2: Delivered -->
+<article class="bg-surface rounded-2xl shadow-sm border border-outline-variant/30 overflow-hidden flex flex-col opacity-90">
+<!-- Card Header -->
+<div class="bg-surface-container-low px-8 py-5 border-b border-outline-variant/30 flex flex-wrap justify-between items-center gap-4">
+<div class="flex flex-wrap gap-8">
+<div>
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">Order Placed</p>
+<p class="font-body-md text-body-md text-on-surface">October 12, 2024</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">Total</p>
+<p class="font-body-md text-body-md text-on-surface">£42.50</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">Dispatch To</p>
+<p class="font-body-md text-body-md text-secondary hover:underline cursor-pointer">Home Address</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider mb-1">Order #LR-87105</p>
+<a class="font-label-md text-label-md text-secondary hover:text-secondary-container transition-colors" href="#">View Invoice</a>
+</div>
+</div>
+<!-- Card Body -->
+<div class="p-8">
+<div class="flex justify-between items-start mb-6">
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-success-mint"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Delivered Oct 14</h3>
+</div>
+<div class="flex gap-4">
+<button class="px-6 py-3 rounded-full border-2 border-outline-variant text-on-surface font-label-md text-label-md hover:border-primary hover:text-primary transition-colors active:scale-95">
+                                    Rate This Book
+                                </button>
+<button class="px-6 py-3 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md hover:bg-primary-fixed-dim transition-colors shadow-sm active:scale-95">
+                                    Buy Again
+                                </button>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<!-- Item 1 -->
+<div class="flex gap-6 items-center border-b border-outline-variant/20 pb-6">
+<div class="w-24 h-32 rounded-lg overflow-hidden border border-outline-variant/20 shrink-0 bg-surface-container">
+<img alt="Book Cover" class="w-full h-full object-cover" data-alt="A stack of beautifully illustrated children's storybooks resting on a polished wooden table. The top book features a vibrant forest scene. The environment is lit with soft, inviting white light, creating a bright, modern aesthetic with a warm cream undertone, perfect for a high-end educational bookstore." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgue6ov-fgDV9mUcXmhBvUbe7nfc86lVENpyMHpF_GmzIB1kGCX3TJI3iGWtI8zKC-MNicfbiX3szGinc1i2w11RM5sX9-1EdLkYu1kbpXCtxir8gAok8zxYdgUrbxkOBdPWg-8Sw2BOdwgpKK1BnUEVh1OBeoiLSomaz8LQA3F4D9ATkpk6cQqgKSypDTMzcZitbQP4C_4RV3GvAwut_T1-t6lRasKSJfxV5-p3bMdbY18dRWP9BQqkWsK73bxe1kcYxyffHX24yX"/>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Mystery in the Whispering Woods</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">By Arthur Pendelton</p>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">Qty: 1</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex gap-6 items-center">
+<div class="w-24 h-32 rounded-lg overflow-hidden border border-outline-variant/20 shrink-0 bg-surface-container">
+<img alt="Book Cover" class="w-full h-full object-cover" data-alt="A brightly colored early learning mathematics workbook for primary school children. The book is open slightly, revealing engaging graphic layouts inside. Set against a warm cream, minimalistic surface with a very soft ambient shadow, reflecting a clean, professional, yet approachable educational design system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5PHCVJFzyGa8cUd6Lxha1wbpfFcOP3_bnKPrLwxT1JFIX3Eh6HWjnf71Iy0fCgeknocYWODHJeXwQZ9qi1u1TOmdLXc_6AHYvE5j5H0c5hl6e5hRaIBRerP8UObL1rpE_MM_zxwAyjxyLLguDwMvUvX-d3uKM52fSZP3SRIhCHxO4Y3r8-nLRaGcK92Mv01hxJPCCF8z61uVMq00cQv0DlKtCWKIci7mvrvihkVRsoQFJBRBjD1ArktvG52LhALEEkJ_yav9XpWdf"/>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Numbers &amp; Shapes Funbook</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">Little Readers Education</p>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">Qty: 2</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</main>
+</div>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-low mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-gutter px-margin-mobile md:px-margin-desktop py-12 w-full max-w-container-max mx-auto">
+<span class="font-headline-sm text-headline-sm text-primary">Little Readers</span>
+<div class="flex flex-wrap gap-6">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">Contact</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">FAQ</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">Socials</a>
+</div>
+<span class="font-body-md text-body-md text-primary">© 2024 Little Readers Educational Bookshop</span>
+</div>
+</footer>
+</div>

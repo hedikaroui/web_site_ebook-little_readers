@@ -1,0 +1,149 @@
+<div data-screen class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-surface shadow-sm sticky top-0 z-40 w-full">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary scale-95 active:scale-90 transition-transform p-2 rounded-full hover:bg-surface-variant">menu</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary">Little Readers</h1>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-secondary-container transition-colors scale-95 active:scale-90">search</button>
+<button class="material-symbols-outlined text-secondary hover:text-secondary-container transition-colors scale-95 active:scale-90 relative">
+                    shopping_cart
+                    <span class="absolute -top-2 -right-2 bg-accent-coral text-white font-label-sm text-label-sm w-5 h-5 flex items-center justify-center rounded-full">3</span>
+</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-secondary-container transition-colors scale-95 active:scale-90">person</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-[64px] md:py-[80px]">
+<div class="mb-8">
+<h2 class="font-display-lg text-display-lg text-primary mb-2">Your Cart</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Review your selections before proceeding to checkout.</p>
+</div>
+<div class="flex flex-col lg:flex-row gap-gutter relative">
+<!-- Left Column: Cart Items -->
+<div class="flex-grow space-y-6 lg:w-2/3">
+<!-- Item 1 -->
+<div class="bg-surface rounded-[22px] p-6 flex flex-col sm:flex-row gap-6 items-center sm:items-start relative group" style="box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+<!-- Remove Button -->
+<button class="absolute top-4 right-4 text-outline hover:text-error transition-colors p-2 rounded-full hover:bg-error-container material-symbols-outlined text-[20px]">close</button>
+<div class="w-32 h-40 shrink-0">
+<img alt="Book Cover" class="w-full h-full object-cover rounded-[16px] border border-outline-variant/30" data-alt="A brightly colored children's book cover featuring an illustration of a curious bear in a forest. The book is resting on a pristine white surface with a soft, natural light illuminating the glossy finish. The overall mood is playful and inviting, fitting a warm cream e-commerce aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ1mtO9DJj52CVwB-qlqc31cAP_6GXKZ7ztryB_U2jxuXzHuwgb7obSzhPyMUVlOswQAI54Bvv7ozFbouW9qnAs-Zze2HVb3YhgTe-ptIlnzAl5-X3kZv90PN6XwjXoXrH7B6A8f4nZUn0knC0cLfd5ZyCeH_3HbbzM3gJJvFL-tJN2wN0aInNOXoOa_O3oZu1cxNPjFE5sIT3XWxDeX-kZuUmrcx4qjY36En8GGaN7LbsmzbhWghlSsFtAXUz9O_3Bt1Pw12LmATb"/>
+</div>
+<div class="flex-grow flex flex-col justify-between h-full w-full">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-3 py-1 rounded-full">For Leo (Year 2)</span>
+<span class="bg-success-mint/20 text-primary font-label-sm text-label-sm px-3 py-1 rounded-full">In Stock</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">The Adventures of Barnaby Bear</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">By Sarah Jenkins</p>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center bg-surface-container-low rounded-full border border-outline-variant/50 p-1">
+<button class="material-symbols-outlined text-primary hover:bg-surface-variant rounded-full p-1 transition-colors text-[20px]">remove</button>
+<span class="font-label-md text-label-md text-primary w-8 text-center">1</span>
+<button class="material-symbols-outlined text-primary hover:bg-surface-variant rounded-full p-1 transition-colors text-[20px]">add</button>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary">£12.99</span>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface rounded-[22px] p-6 flex flex-col sm:flex-row gap-6 items-center sm:items-start relative group" style="box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+<!-- Remove Button -->
+<button class="absolute top-4 right-4 text-outline hover:text-error transition-colors p-2 rounded-full hover:bg-error-container material-symbols-outlined text-[20px]">close</button>
+<div class="w-32 h-40 shrink-0">
+<img alt="Book Cover" class="w-full h-full object-cover rounded-[16px] border border-outline-variant/30" data-alt="A beautifully illustrated children's science book showing planets and stars. The book sits on a warm cream background, catching soft, diffused light that highlights its vibrant colors. The setting is clean and modern, evoking a high-end educational boutique feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3wulNPyJU0suvuVVzIixg44gCJAKxr2bi8VYLEI9wgOPfNSAcTGZxdwiwibxSFukrlRzeHbawJkGQ0Yrqt-n4X2844Tfk8qN8XZuLS10Irfbx1J7hs-C7fCWhURtXvecErFRbu8ZpqwnrwBBdpJ0cXYNjpHXpTJFIUYKeY5AmMx8TyK22s-0warqHuegcbZpP7czA0omom97w1eUuN-Kc-DuKI_SBd-hC-cK122ZxAjgzbabqincU-jVm-2kZGoabz4ws-A2tw9_T"/>
+</div>
+<div class="flex-grow flex flex-col justify-between h-full w-full">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-3 py-1 rounded-full">For Mia (Year 4)</span>
+<span class="bg-success-mint/20 text-primary font-label-sm text-label-sm px-3 py-1 rounded-full">In Stock</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Our Solar System Explained</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">By Dr. Alex Vance</p>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center bg-surface-container-low rounded-full border border-outline-variant/50 p-1">
+<button class="material-symbols-outlined text-primary hover:bg-surface-variant rounded-full p-1 transition-colors text-[20px]">remove</button>
+<span class="font-label-md text-label-md text-primary w-8 text-center">1</span>
+<button class="material-symbols-outlined text-primary hover:bg-surface-variant rounded-full p-1 transition-colors text-[20px]">add</button>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary">£15.50</span>
+</div>
+</div>
+</div>
+<!-- Mascot Empty Space Filler / Encouragement -->
+<div class="bg-surface-container-low rounded-[22px] p-6 flex items-center gap-6 border border-outline-variant/20">
+<div class="w-16 h-16 bg-surface rounded-full flex items-center justify-center shrink-0" style="box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+<span class="material-symbols-outlined text-secondary text-[32px]">emoji_objects</span>
+</div>
+<div class="relative bg-surface p-4 rounded-[16px] rounded-tl-none shadow-sm flex-grow">
+<div class="absolute -left-2 top-0 w-4 h-4 bg-surface transform rotate-45"></div>
+<p class="font-body-md text-body-md text-primary relative z-10"><strong class="font-bold">Lumi says:</strong> You're just £11.51 away from free delivery! Check out the <a class="text-secondary hover:underline" href="#">Sale section</a> for some great additions.</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Sticky Summary -->
+<div class="lg:w-1/3">
+<div class="bg-surface rounded-[22px] p-6 lg:sticky lg:top-[100px]" style="box-shadow: 0 8px 30px rgba(0,0,0,0.04);">
+<h3 class="font-headline-md text-headline-md text-primary mb-6 border-b border-surface-variant pb-4">Order Summary</h3>
+<div class="space-y-4 mb-6">
+<div class="flex justify-between items-center">
+<span class="font-body-md text-body-md text-on-surface-variant">Subtotal (2 items)</span>
+<span class="font-body-md text-body-md text-primary font-medium">£28.49</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body-md text-body-md text-on-surface-variant">Standard Delivery</span>
+<span class="font-body-md text-body-md text-primary font-medium">£3.99</span>
+</div>
+</div>
+<!-- Promo Code -->
+<div class="mb-6">
+<label class="font-label-md text-label-md text-primary block mb-2">Promo Code</label>
+<div class="flex gap-2">
+<input class="w-full bg-surface border border-outline-variant/80 rounded-[14px] px-4 py-2 font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-all" placeholder="Enter code" type="text"/>
+<button class="bg-surface-container-highest text-primary font-label-md text-label-md px-4 py-2 rounded-[14px] hover:bg-outline-variant transition-colors">Apply</button>
+</div>
+</div>
+<div class="border-t border-surface-variant pt-4 mb-6">
+<div class="flex justify-between items-center">
+<span class="font-headline-sm text-headline-sm text-primary">Total</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">£32.48</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1 text-right">Including VAT</p>
+</div>
+<button class="w-full bg-secondary text-white font-label-md text-label-md font-bold h-[48px] rounded-full hover:bg-secondary-container transition-colors shadow-sm flex items-center justify-center gap-2">
+                        Proceed to Checkout
+                        <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<div class="mt-4 flex items-center justify-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span class="font-label-sm text-label-sm">Secure Checkout</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-gutter px-margin-mobile md:px-margin-desktop py-12 w-full max-w-container-max mx-auto">
+<div class="font-headline-sm text-headline-sm text-primary mb-4 md:mb-0">
+                Little Readers
+            </div>
+<div class="flex gap-6">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">Contact</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">FAQ</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">Socials</a>
+</div>
+<div class="font-body-md text-body-md text-primary mt-4 md:mt-0 text-center md:text-left">
+                © 2024 Little Readers Educational Bookshop
+            </div>
+</div>
+</footer>
+</div>

@@ -1,0 +1,176 @@
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+    </style><div data-screen class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased">
+<!-- TopAppBar -->
+<header class="bg-surface shadow-sm z-40 sticky top-0">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="md:hidden text-primary hover:text-secondary-container transition-colors scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+<a class="font-headline-md text-headline-md font-bold text-primary" href="#">Little Readers</a>
+</div>
+<div class="flex items-center gap-4 text-primary">
+<button class="hover:text-secondary-container transition-colors scale-95 active:scale-90 transition-transform"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span></button>
+<button class="hover:text-secondary-container transition-colors scale-95 active:scale-90 transition-transform"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shopping_cart</span></button>
+<button class="hover:text-secondary-container transition-colors scale-95 active:scale-90 transition-transform"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">person</span></button>
+</div>
+</div>
+</header>
+<div class="flex-1 flex w-full max-w-container-max mx-auto relative">
+<!-- NavigationDrawer (Desktop SideNav) -->
+<aside class="hidden md:flex flex-col bg-surface shadow-xl rounded-r-xl h-[calc(100vh-80px)] w-80 sticky top-[80px] shrink-0 py-6">
+<div class="px-6 mb-8 flex items-center gap-4 left_align">
+<img alt="Lumi the Owl" class="w-12 h-12 rounded-full object-cover" data-alt="A friendly, stylized illustration of a cute owl mascot named Lumi. The owl has large, expressive eyes and soft feathers, rendered in a warm, child-friendly vector style. It sits against a clean, light cream background, embodying a trustworthy and educational vibe suitable for a children's reading platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNP8xhGwbhDruhquXgtn4gVCZyDgWTfE5gcWLfFwfSngY5i_ubqY88St98IQkiFpFQrtubKH-Ncx0FcmX5-fKOVlCF7S9gaJ7kj8sZ54tjt2d01BG5Z9m2ovl9ShQSGWD5-hBLN5M580vMNaeHeWtwv9CCN2v_IK5mnGxDVhBb3hlcwZqfUwUj6pxwdcDq_-MmsfV5kXuVbGHnM39sIA7JGzQY896PBKErWMu99Hm7mrIakkAKGzWlBa4y8BM0wKxwvW-ml_cxVvaK"/>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Lumi the Owl</h2>
+<p class="font-label-md text-label-md text-on-surface-variant">Your Reading Guide</p>
+</div>
+</div>
+<nav class="flex-1 px-4 space-y-2">
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 hover:bg-surface-variant transition-colors opacity-80" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">book</span>
+<span class="font-label-md text-label-md">Books</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 hover:bg-surface-variant transition-colors opacity-80" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+<span class="font-label-md text-label-md">Teachers' Choice</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 hover:bg-surface-variant transition-colors opacity-80" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">school</span>
+<span class="font-label-md text-label-md">School Years</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 hover:bg-surface-variant transition-colors opacity-80" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">sell</span>
+<span class="font-label-md text-label-md">Sale</span>
+</a>
+<!-- Adding My Children as Active for this specific intent -->
+<a class="flex items-center gap-3 px-4 py-3 bg-primary-container text-on-primary-container rounded-full mx-2 transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">face</span>
+<span class="font-label-md text-label-md">My Children</span>
+</a>
+</nav>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 w-full px-margin-mobile md:px-margin-desktop py-12 pb-24">
+<div class="max-w-4xl mx-auto">
+<!-- Header -->
+<div class="mb-10 flex items-center justify-between">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-primary mb-2">My Children</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Manage reading profiles for your little ones.</p>
+</div>
+</div>
+<!-- Children Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+<!-- Child Card: Adam -->
+<div class="bg-surface rounded-[22px] p-6 shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-fixed opacity-20 rounded-bl-full -mr-10 -mt-10 transition-transform group-hover:scale-110 duration-500"></div>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary font-headline-md text-headline-md overflow-hidden relative">
+<img alt="Adam" class="w-full h-full object-cover" data-alt="A portrait photo of a young boy, around 7 years old, smiling brightly. He has short curly hair and is wearing a colorful t-shirt. The background is a soft, blurred outdoor setting with natural light, fitting the bright, cheerful, and approachable aesthetic of a children's educational platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv7JMzGZOIiA8EyBiy8NY1y_jTvA6kOBTl9fRaTAyDirfP2DqfCkrTej6A7JJ5bPArDvm59B5sFZHs9Mt1X8J8nzLVzlc_ZnVPXtWgipOgHJd-NS2RG2jEc8sRSfvM98Ak0shqLGLa1-ca3xLqqAi_S_jGbvSEV7uY-W3w2PG5TOuly-cmmjz7r_H3ooiy_z3A1f_oeniOxzqsrmLuOlleX3Ih6spdrfLmNL6BDyZVw-EVXwX-4dYbHRlKE7abW6J0U2SCBIXwdhDy"/>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Adam</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Age 7 • Year 2</p>
+</div>
+</div>
+<div class="space-y-4">
+<div>
+<p class="font-label-sm text-label-sm text-outline mb-1">Reading Level</p>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant rounded-full font-label-sm text-label-sm">Independent Reader</span>
+</div>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-outline mb-2">Interests</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant rounded-full font-label-sm text-label-sm border border-outline-variant">Dinosaurs</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant rounded-full font-label-sm text-label-sm border border-outline-variant">Space</span>
+</div>
+</div>
+</div>
+<button class="mt-6 w-full py-2 text-secondary font-label-md text-label-md hover:bg-secondary-fixed transition-colors rounded-full border border-secondary-fixed">
+                            Edit Profile
+                        </button>
+</div>
+<!-- Child Card: Lina -->
+<div class="bg-surface rounded-[22px] p-6 shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 right-0 w-32 h-32 bg-accent-coral opacity-10 rounded-bl-full -mr-10 -mt-10 transition-transform group-hover:scale-110 duration-500"></div>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-16 h-16 rounded-full bg-accent-coral flex items-center justify-center text-white font-headline-md text-headline-md overflow-hidden relative">
+<img alt="Lina" class="w-full h-full object-cover" data-alt="A portrait photo of a young girl, around 5 years old, looking curious. She has dark hair tied back and is wearing a soft pastel sweater. The background is a clean, bright, out-of-focus indoor space, matching a light-mode, modern educational website aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdIk-qowqc_56tKQiLvHrvmSSKMDUXqOx_fTsWxtPz5JL1RwlXPezwP1o14Xi9hhno-eTs28MSjF4rsp3JykMFENxW0zlD97kqBIPVi35LEwOsPu8z7xqdCxhdvJaIZg86pIpJcnPMfOArzSwAN8MEL4movO9AkLvR6NPW8blL_xkThYcm7EJzWqWvj7znbZ8ZJCvL9mI1DVoS7HXdB6x9Jblsn3kkUZCsg5WUWlEbFA1YdhVoSdopMw16o4CjPBUM-PESEV7Konxm"/>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Lina</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Age 5 • Reception</p>
+</div>
+</div>
+<div class="space-y-4">
+<div>
+<p class="font-label-sm text-label-sm text-outline mb-1">Reading Level</p>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed-variant rounded-full font-label-sm text-label-sm">Beginner</span>
+</div>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-outline mb-2">Interests</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant rounded-full font-label-sm text-label-sm border border-outline-variant">Animals</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant rounded-full font-label-sm text-label-sm border border-outline-variant">Fairy Tales</span>
+</div>
+</div>
+</div>
+<button class="mt-6 w-full py-2 text-secondary font-label-md text-label-md hover:bg-secondary-fixed transition-colors rounded-full border border-secondary-fixed">
+                            Edit Profile
+                        </button>
+</div>
+<!-- Add Another Child Card -->
+<button class="bg-surface-container-lowest rounded-[22px] p-6 border-2 border-dashed border-outline-variant hover:border-secondary hover:bg-secondary-fixed-dim/20 transition-all group flex flex-col items-center justify-center text-center min-h-[300px]">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-4 group-hover:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors text-3xl" style="font-variation-settings: 'FILL' 0;">add</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Add another child</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Create a profile to get personalized book recommendations.</p>
+</button>
+</div>
+<!-- Privacy & Mascot Section -->
+<div class="glass-card rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6 mt-16 relative overflow-hidden">
+<div class="w-24 h-24 shrink-0 rounded-full bg-surface shadow-sm flex items-center justify-center p-2 relative z-10">
+<img alt="Lumi Waving" class="w-full h-full object-cover rounded-full" data-alt="A friendly, stylized illustration of a cute owl mascot named Lumi waving one wing cheerfully. The owl is rendered in a warm, child-friendly vector style, sitting against a clean, light cream background. The aesthetic is modern, trustworthy, and educational." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADzdDVza_QKuD4vhq5hxci0Zu2HMoZ7wDTlD_tDa9a_G45VW7JjswMtO3quEOqYRT0xKrRGj6NXLtMa_CPH_Nw9WMFA0g1qOf2gRfv6dqD4OyV1FC6YaZQ9GNPHCuM6ESK3pL1tYTXS0IjsPZMOE7QOhtbzBITEk6pEqj9DycrU9s_vM4kqhallGRHHuhUZKQFWL8PwtT_BraBVTwbP_mLvP7qo07SLgBpcKkezlV9xDVhdETpHDcL_hERUj1LhU2ENlQpei5HyQFk"/>
+</div>
+<div class="flex-1 relative z-10">
+<div class="bg-surface py-3 px-5 rounded-2xl rounded-tl-none inline-block shadow-sm mb-2">
+<p class="font-body-md text-body-md text-primary font-medium">Your family's privacy is our top priority!</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+                            We only use age and interest data to find the perfect books for your children. We never share this information with third parties.
+                        </p>
+</div>
+<!-- Decorative background element -->
+<div class="absolute right-[-10%] bottom-[-20%] w-64 h-64 bg-secondary opacity-5 rounded-full blur-3xl z-0"></div>
+</div>
+</div>
+</main>
+</div>
+<!-- Footer -->
+<footer class="bg-surface-container-low mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-gutter px-margin-mobile md:px-margin-desktop py-12 w-full max-w-container-max mx-auto">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-headline-sm text-headline-sm text-primary">Little Readers</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-center md:text-left">© 2024 Little Readers Educational Bookshop</span>
+</div>
+<nav class="flex flex-wrap justify-center gap-6">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">Contact</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">FAQ</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">Socials</a>
+</nav>
+</div>
+</footer>
+</div>

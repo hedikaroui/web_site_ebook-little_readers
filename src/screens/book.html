@@ -1,0 +1,159 @@
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        .soft-shadow {
+            box-shadow: 0 10px 40px -10px rgba(0,29,54,0.08);
+        }
+    </style><div data-screen class="antialiased">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-container-high shadow-sm dark:shadow-none flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full sticky docked full-width top-0 z-50">
+<div class="flex items-center gap-4">
+<button class="text-primary dark:text-inverse-primary hover:text-secondary-container transition-colors scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-secondary-fixed-dim">Little Readers</h1>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant dark:text-outline-variant">
+<button class="hover:text-secondary-container transition-colors scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="hover:text-secondary-container transition-colors scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="hover:text-secondary-container transition-colors scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-desktop py-12 flex flex-col gap-16">
+<!-- Book Detail Hero Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<!-- Left Column: Imagery -->
+<div class="col-span-1 md:col-span-5 flex flex-col gap-6">
+<div class="bg-surface rounded-[22px] soft-shadow p-6 flex items-center justify-center aspect-[4/5] relative">
+<img alt="Cover of the book" class="rounded-lg object-cover w-full h-full border border-surface-variant shadow-sm" data-alt="A beautifully illustrated children's book cover featuring a magical forest scene with glowing mushrooms and a friendly fox. The style is warm, modern, and highly detailed, designed for a high-end educational boutique. Soft, natural lighting enhances the tactile feel of the physical book, set against a pristine white studio background to emphasize the rich, vibrant colors of the illustration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0tadGR7qnwXg-OO9qCyKwqKhaoG1O1WEZMSwlnHD7YlJqV-CpPdOOZh2_Wn2HtYB6dYX1_eOv8L9FzfSbPZd96wp8aOpBkP56jgc1vp7weKb8fUNhG0MfMt-XH3Z12yU2kNsmSs5DBAVP9tET2s4xgiPO4hnlk-_7EM15XNYTPftoaeqk1Nb-KKpUDiwk2jY6kPqjtNac_8hIJBWcd-530z_n-oEPLXrFZZpNDMIJfjbaPx8djq8pY2yhQSDXVIgUPt-e-XoHASH4"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-success-mint text-primary font-label-sm text-label-sm px-3 py-1 rounded-full">Bestseller</span>
+</div>
+</div>
+<!-- Thumbnails -->
+<div class="flex gap-4 overflow-x-auto pb-2">
+<button class="w-20 h-20 flex-shrink-0 bg-surface rounded-lg soft-shadow border-2 border-secondary overflow-hidden">
+<img alt="Thumbnail 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhHoIbe95yP9fOyFZ6utD-4LtQfv9dHw-b2I13d4DZ6ztWluxlheY435K8yHtoUY6Thn9SFYFzzmz_L2DdT_xairhUWmNNnh8SEcZKOy_bektSAShRLLNLByeUKPle1tkLpf_9NOni60e8m5EHb7n2cOfxQ47ZXXYnwQkfNBZBR_9q0-0iKAA0Jur_6nDLD0Ta-nx-yrR_7ipQEynFIuJ2jtyYh3BzEJrg_xi-vgOYfwuog7dTE2sTkdZpB2K77EHkWmKUBwrTesP_"/>
+</button>
+<button class="w-20 h-20 flex-shrink-0 bg-surface rounded-lg soft-shadow border border-surface-variant overflow-hidden opacity-70 hover:opacity-100 transition-opacity">
+<img alt="Thumbnail 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeFhecuK-92SsrnB0HqXSORPC28NtC54xLar6SR4IBp86YPnzxLFUyvzrwLuwRd85Xcws9YpSn4ss0bEnTK2siSKGxpr--yTfL84f4Xz9QXlckQFA_L2YH0P7YWirGOOnP8hVEA4mrlRBZCzWGTdSkr_qVUWY9fm1-0ckWPrnlgPi-s6kp6mn-vT5sF22Cik0CjNKDZPrKkwQiLpIDc90xJplNeMvUKTtsKmViHHY9tDdRri-VYgEjurPjQCgQI6RRVlh9-otSDSTv"/>
+</button>
+<button class="w-20 h-20 flex-shrink-0 bg-surface rounded-lg soft-shadow border border-surface-variant overflow-hidden opacity-70 hover:opacity-100 transition-opacity">
+<img alt="Thumbnail 3" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZrnxgo14WmptSN6j5fvl5nEtL9rvfYnVIWhbB2vg4Szy5YKxaxQkSRrfl6VxS1CslXfbJB-BEFRjfgVX9iB_ovoAbYG2C19BByvx61S7WOJavINtIKTHVvL-3JUzkju46YGINYJYFsHn9zdpjn6Ac6hFHtcPhxPXppEtJCS-NKdTPdWgmNQjIKJa_KJfcMyNjybybP71z8Nzo5OtX2yCV22E1dKm0BSlQdE2Ns1nlo2w2cgiOK3PNPRYWbECcdOT3fi51uha6EsA5"/>
+</button>
+</div>
+<button class="flex items-center justify-center gap-2 w-full py-3 rounded-full border border-primary text-primary font-label-md text-label-md hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+                    Preview Sample Pages
+                </button>
+</div>
+<!-- Right Column: Details & Actions -->
+<div class="col-span-1 md:col-span-7 flex flex-col gap-8">
+<!-- Header Info -->
+<div class="flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<h2 class="font-display-lg text-display-lg text-primary">The Magical Forest Explorer</h2>
+<button class="text-on-surface-variant hover:text-accent-coral transition-colors p-2">
+<span class="material-symbols-outlined" data-icon="favorite_border">favorite_border</span>
+</button>
+</div>
+<p class="font-body-lg text-body-lg text-outline">By Sarah Jenkins • Illustrated by Mark Tom</p>
+<div class="flex items-center gap-4">
+<div class="flex text-tertiary-fixed-dim">
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star_half" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4.8 (124 reviews)</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-success-mint flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" data-icon="check_circle">check_circle</span>
+                            In Stock
+                        </span>
+</div>
+</div>
+<!-- Price & Badges -->
+<div class="flex items-end gap-4">
+<span class="font-display-lg text-display-lg text-primary">£14.99</span>
+</div>
+<!-- Metadata Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-surface rounded-[22px] p-6 soft-shadow">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline">Age</span>
+<span class="font-label-md text-label-md text-primary">5-7 Years</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline">Level</span>
+<span class="font-label-md text-label-md text-primary">Key Stage 1</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline">Subject</span>
+<span class="font-label-md text-label-md text-primary">Nature &amp; Science</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline">Format</span>
+<span class="font-label-md text-label-md text-primary">Hardcover, 48p</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md bg-surface-container-low p-4 rounded-xl">
+<span class="material-symbols-outlined text-secondary" data-icon="local_shipping">local_shipping</span>
+                    Order now for delivery by <strong>Thursday, Oct 12</strong>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-4 border-t border-surface-variant pt-6">
+<div class="flex items-center gap-4">
+<!-- Quantity -->
+<div class="flex items-center border border-outline-variant rounded-full h-12 bg-surface">
+<button class="w-12 h-full flex items-center justify-center text-primary hover:text-secondary"><span class="material-symbols-outlined" data-icon="remove">remove</span></button>
+<span class="font-label-md text-label-md w-8 text-center text-primary">1</span>
+<button class="w-12 h-full flex items-center justify-center text-primary hover:text-secondary"><span class="material-symbols-outlined" data-icon="add">add</span></button>
+</div>
+<!-- Add to Cart -->
+<button class="flex-1 h-12 bg-secondary text-on-secondary rounded-full font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-secondary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+                            Add to Cart
+                        </button>
+</div>
+<!-- Buy Now -->
+<button class="w-full h-12 bg-primary text-on-primary rounded-full font-label-md text-label-md hover:bg-on-primary-fixed-variant transition-colors shadow-sm">
+                        Buy Now
+                    </button>
+</div>
+<!-- Lumi Assistant -->
+<div class="bg-primary-fixed rounded-[22px] p-6 flex gap-4 items-start relative overflow-hidden mt-4">
+<div class="w-16 h-16 rounded-full bg-surface flex items-center justify-center flex-shrink-0 z-10 shadow-sm border-2 border-white">
+<span class="material-symbols-outlined text-[32px] text-secondary" data-icon="cruelty_free">cruelty_free</span>
+</div>
+<div class="z-10 flex flex-col gap-2">
+<h4 class="font-headline-sm text-headline-sm text-on-primary-fixed">Ask Lumi</h4>
+<p class="font-body-md text-body-md text-on-primary-fixed-variant">Wondering if this book is right for your child's reading level? I can help!</p>
+<button class="text-secondary font-label-md text-label-md underline mt-1 self-start">Chat with Lumi</button>
+</div>
+<!-- Decorative element -->
+<div class="absolute -right-8 -bottom-8 w-32 h-32 bg-secondary-fixed opacity-50 rounded-full"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-highest flex flex-col md:flex-row justify-between items-center gap-gutter px-margin-mobile md:px-margin-desktop py-12 w-full full-width flat mt-12">
+<div class="font-headline-sm text-headline-sm text-primary">Little Readers</div>
+<div class="flex gap-6 font-label-md text-label-md">
+<a class="text-on-surface-variant hover:text-secondary underline transition-all" href="#">About</a>
+<a class="text-on-surface-variant hover:text-secondary underline transition-all" href="#">Contact</a>
+<a class="text-on-surface-variant hover:text-secondary underline transition-all" href="#">FAQ</a>
+<a class="text-on-surface-variant hover:text-secondary underline transition-all" href="#">Socials</a>
+</div>
+<div class="font-body-md text-body-md text-primary dark:text-inverse-primary">© 2024 Little Readers Educational Bookshop</div>
+</footer>
+</div>

@@ -1,0 +1,246 @@
+<style>
+        .soft-shadow {
+            box-shadow: 0 4px 20px -2px rgba(0, 29, 54, 0.05);
+        }
+    </style><div data-screen class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-container-high shadow-sm flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full docked full-width top-0 z-40">
+<div class="flex items-center gap-4">
+<button class="md:hidden text-primary dark:text-inverse-primary scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-secondary-fixed-dim">Little Readers</h1>
+</div>
+<nav class="hidden md:flex gap-6 items-center">
+<a class="font-label-md text-label-md bg-primary-container text-on-primary-container rounded-full px-4 py-2 transition-colors" href="#">Books</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-secondary-container transition-colors" href="#">Teachers' Choice</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-secondary-container transition-colors" href="#">School Years</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-secondary-container transition-colors" href="#">Sale</a>
+</nav>
+<div class="flex items-center gap-4 text-primary dark:text-inverse-primary">
+<button class="scale-95 active:scale-90 transition-transform hover:text-secondary-container"><span class="material-symbols-outlined">search</span></button>
+<button class="scale-95 active:scale-90 transition-transform hover:text-secondary-container"><span class="material-symbols-outlined">shopping_cart</span></button>
+<button class="scale-95 active:scale-90 transition-transform hover:text-secondary-container"><span class="material-symbols-outlined">person</span></button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow max-w-[1200px] mx-auto w-full px-margin-mobile md:px-margin-desktop py-16 flex flex-col md:flex-row gap-8">
+<!-- Left Sidebar: Filters -->
+<aside class="w-full md:w-64 flex-shrink-0 flex flex-col gap-8">
+<div class="bg-surface rounded-xl p-6 soft-shadow">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">filter_list</span>
+                    Filter Books
+                </h2>
+<div class="flex flex-col gap-6">
+<!-- Child Profile -->
+<div>
+<h3 class="font-label-md text-label-md text-on-surface-variant mb-3">Child Profile</h3>
+<div class="flex items-center gap-3 p-3 border border-outline-variant rounded-lg bg-surface-container-low">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-bold">L</div>
+<div>
+<p class="font-label-md text-label-md">Leo</p>
+<p class="font-label-sm text-label-sm text-outline">Age 6 • Year 1</p>
+</div>
+</div>
+</div>
+<hr class="border-outline-variant"/>
+<!-- Level -->
+<div>
+<h3 class="font-label-md text-label-md text-on-surface-variant mb-3">Reading Level</h3>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="rounded border-outline-variant text-secondary focus:ring-secondary" type="checkbox"/>
+<span class="font-body-md text-body-md">Beginner (Phonics)</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded border-outline-variant text-secondary focus:ring-secondary" type="checkbox"/>
+<span class="font-body-md text-body-md">Emerging Reader</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded border-outline-variant text-secondary focus:ring-secondary" type="checkbox"/>
+<span class="font-body-md text-body-md">Independent</span>
+</label>
+</div>
+</div>
+<hr class="border-outline-variant"/>
+<!-- Subject -->
+<div>
+<h3 class="font-label-md text-label-md text-on-surface-variant mb-3">Subject</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-secondary text-on-secondary rounded-full font-label-sm text-label-sm cursor-pointer">Science</span>
+<span class="px-3 py-1 bg-surface-variant text-on-surface-variant hover:bg-outline-variant rounded-full font-label-sm text-label-sm cursor-pointer transition-colors">Maths</span>
+<span class="px-3 py-1 bg-surface-variant text-on-surface-variant hover:bg-outline-variant rounded-full font-label-sm text-label-sm cursor-pointer transition-colors">Fiction</span>
+<span class="px-3 py-1 bg-surface-variant text-on-surface-variant hover:bg-outline-variant rounded-full font-label-sm text-label-sm cursor-pointer transition-colors">History</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Lumi Tip -->
+<div class="bg-surface-container-low rounded-xl p-4 flex gap-4 items-start relative border border-tertiary-fixed-dim/30">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-2xl flex-shrink-0">🦉</div>
+<div class="bg-surface p-3 rounded-[16px] rounded-tl-none soft-shadow relative">
+<p class="font-label-sm text-label-sm text-on-surface">Did you know? Reading for just 10 minutes a day builds confidence!</p>
+</div>
+</div>
+</aside>
+<!-- Right Side: Grid -->
+<div class="flex-grow flex flex-col gap-6">
+<!-- Header & Applied Filters -->
+<div class="flex flex-col gap-4">
+<div class="flex justify-between items-end">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Discover Books</h2>
+<p class="font-body-md text-body-md text-outline mt-1">Showing 124 results for Leo</p>
+</div>
+<select class="bg-surface border border-outline-variant rounded-lg font-label-md text-label-md text-on-surface py-2 pl-3 pr-8 focus:ring-2 focus:ring-secondary">
+<option>Sort by: Recommended</option>
+<option>Sort by: Newest</option>
+<option>Sort by: Price (Low to High)</option>
+</select>
+</div>
+<div class="flex flex-wrap gap-2 items-center">
+<span class="font-label-sm text-label-sm text-outline mr-2">Filters:</span>
+<span class="flex items-center gap-1 bg-surface border border-outline-variant px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface">
+                        Year 1
+                        <button class="text-outline hover:text-error"><span class="material-symbols-outlined text-[16px]">close</span></button>
+</span>
+<span class="flex items-center gap-1 bg-surface border border-outline-variant px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface">
+                        Beginner
+                        <button class="text-outline hover:text-error"><span class="material-symbols-outlined text-[16px]">close</span></button>
+</span>
+<span class="flex items-center gap-1 bg-surface border border-outline-variant px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface">
+                        Science
+                        <button class="text-outline hover:text-error"><span class="material-symbols-outlined text-[16px]">close</span></button>
+</span>
+<button class="font-label-sm text-label-sm text-secondary hover:underline ml-2">Clear all</button>
+</div>
+</div>
+<!-- Book Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<article class="bg-surface rounded-[22px] p-4 flex flex-col gap-4 soft-shadow group hover:shadow-md transition-shadow relative">
+<div class="absolute top-6 left-6 z-10 flex gap-2">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-2 py-1 rounded-full shadow-sm">Bestseller</span>
+</div>
+<div class="w-full aspect-[3/4] rounded-[16px] overflow-hidden bg-surface-container relative">
+<img alt="Children's book cover showing a colorful illustration of space." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A brightly colored children's educational book cover standing upright. The cover features a vivid, playful illustration of a rocket ship flying through a stylized, starry space environment. The lighting is bright and cheerful, perfectly suited for an optimistic, high-end children's e-commerce layout. The setting feels clean, modern, and engaging." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJyo1DNmtgatLo5J65FPhid1v7D7SG_WT4ZQlS8koCHX37hYb1yn7o_UtcKPKOjmHAzKnLAMRSNrO8tz3DYoSTC2O9cw11o4mvvQqLEfvM6GQ_oR4JEYHuT9sNAFHpay_f5LYehFN4d5xzU5QkiRiyRryQFSy8gB-eIgcsZ14eX3T75z1Pkd1jmVz7bGpQ1epDoxQsBVcV_6H4Xl5dIg30UBCPWmhnP-lbjRccYv0I5izEFpXmS9UG2c9q8MKDWJfSJNMBNW7eODAE"/>
+</div>
+<div class="flex flex-col gap-2 flex-grow">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-sm text-headline-sm text-primary line-clamp-2">The Solar System for Kids</h3>
+<button class="text-outline hover:text-accent-coral transition-colors"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<p class="font-body-md text-body-md text-outline">By Dr. Sarah Jenkins</p>
+<div class="flex items-center gap-1 text-tertiary-fixed-dim mt-auto">
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star_half</span>
+<span class="font-label-sm text-label-sm text-outline ml-1">(42)</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-success-mint text-[16px]">check_circle</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Builds STEM vocabulary</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2">
+<span class="font-headline-md text-headline-md text-primary">£12.99</span>
+<button class="bg-secondary hover:bg-primary-container text-on-secondary font-label-md text-label-md h-10 px-4 rounded-full transition-colors flex items-center gap-2">
+                            Add <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface rounded-[22px] p-4 flex flex-col gap-4 soft-shadow group hover:shadow-md transition-shadow relative">
+<div class="absolute top-6 left-6 z-10 flex gap-2">
+<span class="bg-success-mint text-primary font-label-sm text-label-sm px-2 py-1 rounded-full shadow-sm">New</span>
+</div>
+<div class="w-full aspect-[3/4] rounded-[16px] overflow-hidden bg-surface-container relative">
+<img alt="Children's book cover showing animals in a forest." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A modern children's book cover resting against a clean white background. The cover illustration depicts cute, friendly animals in a soft, watercolor forest setting. The overall mood is gentle, educational, and warm, aligning with a high-end educational bookstore aesthetic. Lighting is soft, diffused, and inviting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVhPce9J0HlbYByD2P7EbgduZhM_ZAXy3Fw_IJpjgo_ptJRDyyjDj3v0E2qWice87HQWn81HOF8bFe8xJjqBvDls72t9HpEju2w9iOCMx4lUSheNLBbceNhstacrWlJB4lG3s2L5A8cMTVnmrVWcCvVeuWWWrfpOuX0IGYIeMLH-nqNGtQTx-P4_XFdfqlEbKwVbZLUeDhMxHtqJoAOmJsnQwYvjm0io2GFygj0DDO7QQITMauyXybM8lE_uW4C60sqNziVyxR00rw"/>
+</div>
+<div class="flex flex-col gap-2 flex-grow">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-sm text-headline-sm text-primary line-clamp-2">Forest Friends Biology</h3>
+<button class="text-outline hover:text-accent-coral transition-colors"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<p class="font-body-md text-body-md text-outline">By Emma Woods</p>
+<div class="flex items-center gap-1 text-tertiary-fixed-dim mt-auto">
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="font-label-sm text-label-sm text-outline ml-1">(18)</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-success-mint text-[16px]">check_circle</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Nature awareness</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2">
+<span class="font-headline-md text-headline-md text-primary">£9.50</span>
+<button class="bg-secondary hover:bg-primary-container text-on-secondary font-label-md text-label-md h-10 px-4 rounded-full transition-colors flex items-center gap-2">
+                            Add <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface rounded-[22px] p-4 flex flex-col gap-4 soft-shadow group hover:shadow-md transition-shadow relative">
+<div class="w-full aspect-[3/4] rounded-[16px] overflow-hidden bg-surface-container relative">
+<img alt="Children's book cover showing geometric shapes." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An educational book cover focusing on mathematics for young children. The cover features bright, bold, colorful geometric shapes arranged playfully on a clean background. The visual style is modern, vector-based, and highly engaging. Lighting is even and bright, highlighting the premium, trustworthy nature of the educational product." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5XBOG3Dpm9OUVZGKF57HBpne0La4udKpkVVIyXXcO7ewBtYCGceRgW-2YS5BUyLzr1M5PgjeM33COLQRt-TYLy2fL2LXLzMKtR5HdR7cxlC5iapvBMGZIZUlHfnQNVcxot6J3xBRt7PZ-s2kYKTLVW03Z18lXZLHZDv7g2RsyU76geWgWjwyDXoTf5dewHRfrZiheb2YFBzZz3Vw-m43Q6pckRyM2lgDnTqjA334QuEl3qFFR4XQxus0t32d3U1lnV_5XDjRzItr7"/>
+</div>
+<div class="flex flex-col gap-2 flex-grow">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-sm text-headline-sm text-primary line-clamp-2">Shapes All Around Us</h3>
+<button class="text-outline hover:text-accent-coral transition-colors"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<p class="font-body-md text-body-md text-outline">By Mark Mathers</p>
+<div class="flex items-center gap-1 text-tertiary-fixed-dim mt-auto">
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="font-label-sm text-label-sm text-outline ml-1">(5)</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-success-mint text-[16px]">check_circle</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Early geometry</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2">
+<span class="font-headline-md text-headline-md text-primary">£8.00</span>
+<button class="bg-secondary hover:bg-primary-container text-on-secondary font-label-md text-label-md h-10 px-4 rounded-full transition-colors flex items-center gap-2">
+                            Add <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Pagination -->
+<div class="flex justify-center items-center gap-2 mt-8">
+<button class="w-10 h-10 rounded-full bg-surface border border-outline-variant flex items-center justify-center text-outline hover:bg-surface-container transition-colors"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center justify-center">1</button>
+<button class="w-10 h-10 rounded-full bg-surface border border-outline-variant flex items-center justify-center text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors">2</button>
+<button class="w-10 h-10 rounded-full bg-surface border border-outline-variant flex items-center justify-center text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors">3</button>
+<button class="w-10 h-10 rounded-full bg-surface border border-outline-variant flex items-center justify-center text-outline hover:bg-surface-container transition-colors"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-highest flex flex-col md:flex-row justify-between items-center gap-gutter px-margin-mobile md:px-margin-desktop py-12 w-full full-width flat mt-auto">
+<div class="font-headline-sm text-headline-sm text-primary">
+            Little Readers
+        </div>
+<nav class="flex gap-6">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">Contact</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">FAQ</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline transition-all" href="#">Socials</a>
+</nav>
+<div class="font-body-md text-body-md text-primary dark:text-inverse-primary text-center md:text-right">
+            © 2024 Little Readers Educational Bookshop
+        </div>
+</footer>
+</div>

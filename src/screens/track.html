@@ -1,0 +1,206 @@
+<div data-screen class="bg-background text-on-background font-body-md text-body-md min-h-screen flex antialiased">
+<!-- Navigation Drawer (Sidebar) -->
+<nav class="fixed left-0 top-0 h-full w-80 bg-surface dark:bg-surface-container shadow-xl z-50 rounded-r-xl hidden md:flex flex-col">
+<!-- Header (Profile) -->
+<div class="p-6 flex items-center gap-4 border-b border-surface-variant">
+<img alt="Lumi the Owl" class="w-12 h-12 rounded-full object-cover" data-alt="A cute illustration of a friendly owl mascot, designed in a soft, approachable style with big eyes and warm colors. The mascot represents an educational reading guide for primary school children. The background is a simple, soft pastel color. Modern corporate and soft tactile aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC352nr0ISgLBVLBOpGmKMlIkWHZecXcqHUOR48A9mqqYhjcYJNFKnkaRrtMUReE8Q2Q1TdUqnJcpLV_Xe-NYM_eJdrP7dp2KgS3FvBqUuOMBxCpeGP1jvnlOXPfqVNFHG0-B5T0qYPwxP4pTTPPnWkm4m572mI4MagOQd6K3Bib-YJwioDkB1x0ryIceQ_Y-aqDsX7vbq_5cwWv8_885D8_8t96oxnhX4lLPue28B3S60dCGbqnW4y8rhHoUd8TS4k_vLilWTaD6jy"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Lumi the Owl</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Your Reading Guide</span>
+</div>
+</div>
+<!-- Navigation Links -->
+<div class="flex-1 py-4 overflow-y-auto">
+<ul class="space-y-2 font-label-md text-label-md">
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="book">book</span>
+                        Books
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="star">star</span>
+                        Teachers' Choice
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="school">school</span>
+                        School Years
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="sell">sell</span>
+                        Sale
+                    </a>
+</li>
+<!-- We are on an order tracking page, which isn't explicitly in the nav JSON, so we don't highlight any of these specifically, though ideally there'd be an "Orders" or "Profile" tab. We will leave them inactive based on strict instructions to not hallucinate active states. -->
+</ul>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 ml-0 md:ml-80 flex flex-col min-h-screen">
+<!-- TopAppBar (Web Fallback / Mobile) -->
+<header class="md:hidden bg-surface shadow-sm full-width top-0 z-40 flex justify-between items-center px-margin-mobile py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="text-primary hover:text-secondary-container transition-colors scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="font-headline-md text-headline-md font-bold text-primary">Little Readers</span>
+</div>
+<div class="flex gap-4 text-primary">
+<button class="hover:text-secondary-container transition-colors scale-95 active:scale-90 transition-transform"><span class="material-symbols-outlined" data-icon="search">search</span></button>
+<button class="hover:text-secondary-container transition-colors scale-95 active:scale-90 transition-transform"><span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span></button>
+<button class="hover:text-secondary-container transition-colors scale-95 active:scale-90 transition-transform"><span class="material-symbols-outlined" data-icon="person">person</span></button>
+</div>
+</header>
+<!-- Canvas -->
+<div class="flex-1 px-margin-mobile md:px-margin-desktop py-12 md:py-20 w-full max-w-container-max mx-auto">
+<div class="mb-12">
+<h1 class="font-headline-lg text-headline-lg text-primary mb-2">Track Order #LR-8492</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Estimated delivery: Tomorrow, by 5:00 PM</p>
+</div>
+<!-- Bento Grid Layout for Order Info -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Main Timeline & Map (Span 2) -->
+<div class="lg:col-span-2 flex flex-col gap-gutter">
+<!-- Progress Timeline Card -->
+<div class="bg-surface rounded-[22px] p-8 shadow-[0_4px_24px_rgba(0,0,0,0.04)] relative overflow-hidden">
+<!-- Soft decorative element -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-fixed opacity-20 rounded-bl-full -mr-16 -mt-16 pointer-events-none"></div>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-8">Delivery Status</h2>
+<!-- Horizontal Timeline -->
+<div class="relative">
+<!-- Progress Bar Background -->
+<div class="absolute top-6 left-6 right-6 h-3 bg-surface-variant rounded-full"></div>
+<!-- Progress Bar Fill (Success Mint) -->
+<div class="absolute top-6 left-6 right-1/2 h-3 bg-success-mint rounded-full z-10" style="width: 75%;"></div>
+<!-- Timeline Steps -->
+<div class="flex justify-between relative z-20">
+<!-- Step 1: Received -->
+<div class="flex flex-col items-center w-24">
+<div class="w-12 h-12 rounded-full bg-success-mint flex items-center justify-center text-on-primary mb-3 shadow-sm">
+<span class="material-symbols-outlined" data-icon="inventory_2" data-weight="fill">inventory_2</span>
+</div>
+<span class="font-label-md text-label-md text-primary text-center">Received</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 text-center">Mon, 9:00 AM</span>
+</div>
+<!-- Step 2: Confirmed -->
+<div class="flex flex-col items-center w-24">
+<div class="w-12 h-12 rounded-full bg-success-mint flex items-center justify-center text-on-primary mb-3 shadow-sm">
+<span class="material-symbols-outlined" data-icon="check_circle" data-weight="fill">check_circle</span>
+</div>
+<span class="font-label-md text-label-md text-primary text-center">Confirmed</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 text-center">Mon, 10:15 AM</span>
+</div>
+<!-- Step 3: Preparing -->
+<div class="flex flex-col items-center w-24">
+<div class="w-12 h-12 rounded-full bg-success-mint flex items-center justify-center text-on-primary mb-3 shadow-sm">
+<span class="material-symbols-outlined" data-icon="box_add" data-weight="fill">box_add</span>
+</div>
+<span class="font-label-md text-label-md text-primary text-center">Preparing</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 text-center">Tue, 8:30 AM</span>
+</div>
+<!-- Step 4: Out for Delivery (Active) -->
+<div class="flex flex-col items-center w-24">
+<div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-on-primary mb-3 shadow-sm ring-4 ring-secondary-fixed-dim ring-opacity-50">
+<span class="material-symbols-outlined" data-icon="local_shipping" data-weight="fill">local_shipping</span>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold text-center">Out for Delivery</span>
+<span class="font-label-sm text-label-sm text-secondary mt-1 text-center">Today, 1:45 PM</span>
+</div>
+<!-- Step 5: Delivered (Pending) -->
+<div class="flex flex-col items-center w-24 opacity-50">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant mb-3 border-2 border-surface shadow-sm">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant text-center">Delivered</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 text-center">Pending</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Map Visualization -->
+<div class="bg-surface rounded-[22px] shadow-[0_4px_24px_rgba(0,0,0,0.04)] overflow-hidden h-64 relative">
+<img alt="Map Route" class="w-full h-full object-cover" data-alt="A stylized digital map showing a delivery route traversing a modern suburban neighborhood. The map features a light, clean aesthetic with soft cream and pastel blue tones, fitting a modern corporate yet warm UI design. A distinct, friendly blue line traces the path, ending at a recognizable destination marker. The lighting implies bright, clear daytime conditions." data-location="London" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYENbjUiL-phDbnZpZZTKOe0egSNQ64qnDyk_XLG2xaanu3clRq8kI4611iVinqWlKuf6RqY2IaG7S_dIY6kIkX8oEIh60RFGtTbI-5xSXlPK5TyHjyd6dV7lbE8m3t3Mjt0YNzyUigZkPm9SpJGWmv5Jz12yLowbLjzYLUogfzV8csQyBKUGIF_qI_JWFzKiOB_E4Yg3kODz14waN-ojnN0XboK2Tl_75H9BgSi1fOq6h-vK1wxtRbxyg5qscUydtCW22yuIjL-eH"/>
+<!-- Delivery Van Marker overlay -->
+<div class="absolute top-1/2 left-2/3 transform -translate-x-1/2 -translate-y-1/2 bg-surface p-2 rounded-full shadow-lg flex items-center justify-center animate-bounce">
+<span class="material-symbols-outlined text-secondary" data-icon="local_shipping">local_shipping</span>
+</div>
+</div>
+</div>
+<!-- Sidebar Details (Span 1) -->
+<div class="lg:col-span-1 flex flex-col gap-gutter">
+<!-- Delivery Address Card -->
+<div class="bg-surface rounded-[22px] p-6 shadow-[0_4px_24px_rgba(0,0,0,0.04)]">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="location_on">location_on</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Delivery Details</h3>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant space-y-1">
+<p class="font-bold text-primary">Eleanor Rigby</p>
+<p>123 Imaginary Lane</p>
+<p>Storyville, Bookshire</p>
+<p>BK1 2RD</p>
+</div>
+<div class="mt-4 pt-4 border-t border-surface-variant">
+<button class="w-full h-12 bg-surface text-secondary border-2 border-outline-variant hover:border-secondary rounded-full font-label-md text-label-md transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="edit">edit</span> Delivery Instructions
+                            </button>
+</div>
+</div>
+<!-- Purchased Items Card -->
+<div class="bg-surface rounded-[22px] p-6 shadow-[0_4px_24px_rgba(0,0,0,0.04)] flex-1">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">In this order</h3>
+<div class="space-y-4">
+<!-- Book Item 1 -->
+<div class="flex gap-4 items-center">
+<div class="w-16 h-20 bg-surface-variant rounded-lg overflow-hidden shrink-0">
+<img alt="Book Cover" class="w-full h-full object-cover" data-alt="A brightly colored children's picture book cover featuring an illustration of space and planets. The book is presented on a clean white background with a soft, ambient drop shadow. The style is modern, approachable, and educational, fitting a premium kids' bookstore aesthetic. Warm cream and navy blue accents are visible." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgxF6Yg0REWpJHTw5PCmVUkGHF8vEoGXeQMIRNAJ_M03STj7C8A1tqTTApAUo42aRsKxDPzZ6TER5uzltpVfGfnUR58M0mAFQf6Hn3sZ_VdYeKjL2pb1Qm-DIorZjMIHscHtxkXFTYNk_d8XsfceMF2cfr_N65d-NzFpup7oY5J1F5su_7Y7Gj-TBoM3JX5G7RUp0Bxam1_zs9z7Mc4qVUFS5Aoo9Aw1dRbcorgfxhZDd3ASZHqxgxrO8I3AOhaBs95_UxOfSJXtGt"/>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-label-md text-label-md text-primary truncate">The Great Space Adventure</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Qty: 1</p>
+</div>
+<div class="font-label-md text-label-md text-primary">£12.99</div>
+</div>
+<!-- Book Item 2 -->
+<div class="flex gap-4 items-center">
+<div class="w-16 h-20 bg-surface-variant rounded-lg overflow-hidden shrink-0">
+<img alt="Book Cover" class="w-full h-full object-cover" data-alt="A softcover children's chapter book featuring a friendly dinosaur illustration on the cover. The image is styled cleanly against a white surface with a gentle shadow, conveying a tactile, high-quality product feel. The color palette emphasizes warm, educational tones suitable for a modern primary school reading curriculum." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxqAXJyHWrsdYj0aMVj3WiGlw_hEkOfm0K_p4WUUfVuZgPcIU1an2y7mYYJ2SuiRZ5bhgCmieQAkOOop6veHbD1Oh9tZFBV5xo8c3B946i6_wBpL4kW7Z4Dc4EDxDdvi_i6BsmWGMMHl6NG9axf5AX45giZxohaTJ5u6zzFEQe_ufxU7QvGhGTvMzhJ7PfdODgDd5EfOax6D67Br30g-afMECtd2Fn-tJ-mFiBmndjUCUODfhBas2Lv27g1N0oQOxbbw8iJl4hziPh"/>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-label-md text-label-md text-primary truncate">Dino Days: The Big Race</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Qty: 1</p>
+</div>
+<div class="font-label-md text-label-md text-primary">£8.50</div>
+</div>
+</div>
+<!-- Mascot Tip (Glassmorphism inspired soft card) -->
+<div class="mt-8 bg-surface-container-low p-4 rounded-xl flex gap-4 items-start relative overflow-hidden">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center shrink-0">
+<img alt="Lumi" class="w-8 h-8 rounded-full object-cover" data-alt="A small, friendly owl mascot icon, designed to look encouraging and helpful. The illustration is soft and modern, using a color palette of warm creams and friendly blues. The aesthetic is clean, corporate yet highly approachable for an educational setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_avuVsWe1nMbH-DXOhCmRTcmnaLw-ic1Fk8cd6YG4rBsU7wP76rjmLLCv6tg18FZT7QpqABgOX88v9aEfNDPSb5LwPOpWVsgFLQDVvhdGw9VNvlhM-PEu7KBPWeOK_Vc3SIog2mRq50ukJcpBwcsbntkQWGJztRP3Ry0QsPZTNHQ7uyhEhqw8ltEg2sNf5n6XWwIeJ4hbzWca-P5oBZegXxjs3tjQ4R4tmhvRZD8rb1CScu1ATev-xTahIKpOpDNAwbsa7_Tvj9Hc"/>
+</div>
+<div class="bg-surface p-3 rounded-2xl rounded-tl-none shadow-sm flex-1 relative z-10 border border-surface-variant">
+<p class="font-label-sm text-label-sm text-primary">Your books are almost there! Make some space on the bookshelf.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-highest flex flex-col md:flex-row justify-between items-center gap-gutter px-margin-mobile md:px-margin-desktop py-12 w-full mt-auto">
+<span class="font-headline-sm text-headline-sm text-primary">Little Readers</span>
+<div class="flex gap-6 font-label-md text-label-md">
+<a class="text-on-surface-variant hover:text-secondary underline transition-all" href="#">About</a>
+<a class="text-on-surface-variant hover:text-secondary underline transition-all" href="#">Contact</a>
+<a class="text-on-surface-variant hover:text-secondary underline transition-all" href="#">FAQ</a>
+<a class="text-on-surface-variant hover:text-secondary underline transition-all" href="#">Socials</a>
+</div>
+<span class="font-body-md text-body-md text-primary dark:text-inverse-primary">© 2024 Little Readers Educational Bookshop</span>
+</footer>
+</main>
+</div>

@@ -1,0 +1,231 @@
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        
+        /* Soft Ambient Shadow for Surface Cards */
+        .card-shadow {
+            box-shadow: 0 4px 20px rgba(29, 28, 23, 0.04), 0 1px 3px rgba(29, 28, 23, 0.02);
+        }
+        
+        /* Inner border for images as per style guide */
+        .img-inner-border {
+            box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
+        }
+    </style><div data-screen class="font-body-md text-body-md antialiased min-h-screen flex flex-col md:flex-row">
+<!-- Mobile Top Bar (Visible only on mobile) -->
+<header class="md:hidden flex justify-between items-center px-margin-mobile py-4 w-full bg-surface shadow-sm sticky top-0 z-40">
+<div class="flex items-center gap-2">
+<button class="p-2 text-primary hover:text-secondary-container transition-colors scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="font-headline-md text-headline-md font-bold text-primary">Little Readers</span>
+</div>
+<div class="flex gap-4 text-primary">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</div>
+</header>
+<!-- Navigation Sidebar (Desktop) -->
+<!-- Matches Shared Component NavigationDrawer structure and styles -->
+<nav class="hidden md:flex fixed left-0 top-0 h-full w-80 bg-surface shadow-xl z-50 rounded-r-xl flex-col">
+<!-- Brand / Header -->
+<div class="p-6 border-b border-surface-variant flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-primary-fixed-dim flex-shrink-0">
+<img alt="Lumi the Owl" class="w-full h-full object-cover" data-alt="A stylized, friendly illustrated owl mascot character named Lumi, designed in a soft, welcoming 2D style. The owl has large, expressive eyes and a warm, approachable demeanor, rendered in light pastel blues and creams. The background is a soft, warm cream color fitting an educational children's bookstore aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZirtFfIYGF0A5aoJ78n3St8npbW7R5atj6r-q1bZMKBWjcJChHVVbotQXfFJLvPzeeakVj3XZtJWGk3VMFHwbpFohQ2Jk2CXKnaLZeHqhVfEY6uRUdpsHNkjkOefa_QbWCSDC_Z02X7eVIbRgns82xmiveHPq3IX4uLJxD7oD0Tbh6EdmfgHhJsWcno2NMpS5H2jIhMqcldVPO1H7JzhwaaoANLDGF9Jx5FE-_E73tlEKFJQ8FOgG1kwJ0mQYQSPkUfaueiCQUeUB"/>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Lumi the Owl</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Your Reading Guide</p>
+</div>
+</div>
+<!-- Navigation Links -->
+<div class="flex-1 overflow-y-auto py-4">
+<ul class="space-y-2">
+<li>
+<a class="flex items-center gap-4 px-4 py-3 bg-primary-container text-on-primary-container rounded-full mx-2 font-label-md text-label-md transition-colors opacity-80" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+                        Overview
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="child_care">child_care</span>
+                        My Children
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+                        Wishlist
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="local_shipping">local_shipping</span>
+                        Orders
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="rate_review">rate_review</span>
+                        Reviews
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="forum">forum</span>
+                        Chat History
+                    </a>
+</li>
+</ul>
+</div>
+<div class="p-4 mt-auto">
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-variant rounded-full font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+                Settings
+            </a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 md:ml-80 w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-8 md:py-16">
+<!-- Header Section -->
+<header class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
+<div>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-2">Good evening, Sarah!</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Here is your reading overview for this week.</p>
+</div>
+<!-- Child Profile Switcher -->
+<div class="flex items-center gap-2 bg-surface p-2 rounded-full card-shadow">
+<button class="flex items-center gap-2 bg-tertiary-fixed text-tertiary px-4 py-2 rounded-full font-label-md text-label-md transition-transform hover:scale-105">
+<span class="w-6 h-6 rounded-full bg-surface flex items-center justify-center text-xs font-bold text-primary">A</span>
+                    Adam (Year 3)
+                </button>
+<button class="flex items-center gap-2 bg-transparent text-on-surface-variant px-4 py-2 rounded-full font-label-md text-label-md hover:bg-surface-variant transition-colors">
+<span class="w-6 h-6 rounded-full bg-surface-variant flex items-center justify-center text-xs font-bold">L</span>
+                    Lina (Year 1)
+                </button>
+</div>
+</header>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Recommended Book Grid (Main Area) -->
+<section class="md:col-span-8 space-y-6">
+<div class="flex justify-between items-center">
+<h2 class="font-headline-md text-headline-md text-primary">Recommended for Adam</h2>
+<a class="font-label-md text-label-md text-secondary hover:underline" href="#">View all</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Product Card 1 -->
+<article class="bg-surface rounded-[22px] p-4 card-shadow flex flex-col group cursor-pointer transition-transform hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] mb-4 rounded-2xl overflow-hidden bg-surface-variant img-inner-border">
+<img alt="Book Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A bright, colorful children's book cover featuring an illustration of a magical forest. The book is presented on a clean, soft cream background, bathed in warm, natural sunlight that highlights its vibrant cover. The overall style is modern, approachable, and high-quality, fitting for a premium educational bookstore." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCErAwwgBqsx2Onm7s-xPgaxbKymz-PFs2LU_UtH2CYNmoDP512_ARL4FSl3yoqKEm3WZi7nCvjWBbg38y1Y7pH5DcoTgx9v4zxOsd42jIZisPsAQSeNozjqbA-WueJM4SZCMY-3RQPTDjjE_IZNo7G8P4N37mNnVpthZayNarKFuyB-EiNwoIcDfmbyy9t0VjkIK38THvNbDF4hzDylZLS9T8jB7Rb8piDNPXU2q1MIslMnjzCM5I5b8n-vWCVqTjZ9Zl5GJQ9d9Y3"/>
+<div class="absolute top-2 left-2 bg-tertiary-fixed text-tertiary px-3 py-1 rounded-full font-label-sm text-label-sm">
+                                Year 3
+                            </div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1 line-clamp-1">The Magic Forest</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Emma Wood</p>
+<div class="mt-auto flex justify-between items-center">
+<span class="font-label-md text-label-md text-primary">$14.99</span>
+<button class="w-10 h-10 rounded-full bg-surface-variant text-primary flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="bg-surface rounded-[22px] p-4 card-shadow flex flex-col group cursor-pointer transition-transform hover:-translate-y-1">
+<div class="relative w-full aspect-[4/5] mb-4 rounded-2xl overflow-hidden bg-surface-variant img-inner-border">
+<img alt="Book Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An engaging educational children's book about space and planets, featuring a deep blue cover with bright stars and a cartoon rocket. The image is styled as a product shot on a clean, soft cream background with gentle, diffused shadows, conveying a premium and inviting aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBGu60CPH_IQePayPAa7Jhvh1NbrbvTt08DJNY2A4p41BDijCNtBC2ypnXWbB7Q-QPCo86rl7QbGXTLoN3QxE3dLS3IGZTdp5gi_uHXchVgzUACkE-UOaV8QPFhAQ6HLIQ5J3Yq7xLUWgzxXA0mkBs_AvJ_fjmeH42-JfkfXHwk_XC26xUClWB2tDjItu_CK5rjaImv5Vfu_Z8OrBLiOwFJUHMZXR386Ee3rGGugaIIwDKv1Yc77chj0fGC6rRapmTKI76ZD_ooZoX"/>
+<div class="absolute top-2 left-2 bg-success-mint text-on-primary-fixed px-3 py-1 rounded-full font-label-sm text-label-sm">
+                                Bestseller
+                            </div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1 line-clamp-1">Space Explorer</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Dr. Stella Ray</p>
+<div class="mt-auto flex justify-between items-center">
+<span class="font-label-md text-label-md text-primary">$18.50</span>
+<button class="w-10 h-10 rounded-full bg-surface-variant text-primary flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</article>
+<!-- Product Card 3 (Hidden on mobile/tablet to fit grid nicely) -->
+<article class="bg-surface rounded-[22px] p-4 card-shadow flex flex-col group cursor-pointer transition-transform hover:-translate-y-1 hidden lg:flex">
+<div class="relative w-full aspect-[4/5] mb-4 rounded-2xl overflow-hidden bg-surface-variant img-inner-border">
+<img alt="Book Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A beautifully illustrated children's storybook titled 'Ocean Friends' with a cute drawing of a whale on a soft blue cover. The book sits on a pristine, warm cream surface with soft, ambient lighting creating a gentle drop shadow. The style is modern, soft, and highly appealing to parents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRaVewoH1JRQ4kjNHBHWcuUtWt53KDOqIKhOWY7daQmrqAxG4aDBb_j_StobsPgoYS98yVmcPPRdLW9OsLDbp5zYMVdScUfdU8TAZaOepf3OdI6Y_gFZuyO16Mdck6LoKYcSoa7OJVOL1YfUN3FsoZEzYr-a9NIFnxfIwKjx9AoRQjyFphPtadIXdb2a0QAojqxJCBRjXap0HEzcbwfp1H4IzGgYQX9nyNY0Z8IDg4T_psNsFITQvJ7CrZ5-YN-RhRX_WGFfzaM69q"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1 line-clamp-1">Ocean Friends</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Tom Rivers</p>
+<div class="mt-auto flex justify-between items-center">
+<span class="font-label-md text-label-md text-primary">$12.00</span>
+<button class="w-10 h-10 rounded-full bg-surface-variant text-primary flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</article>
+</div>
+</section>
+<!-- Sidebar / Status Area -->
+<aside class="md:col-span-4 space-y-6">
+<!-- Active Order Compact Card -->
+<div class="bg-surface rounded-[22px] p-6 card-shadow">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="local_shipping">local_shipping</span>
+                        Active Order
+                    </h3>
+<div class="mb-4">
+<p class="font-label-md text-label-md text-primary">Order #LR-8492</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Arriving tomorrow</p>
+</div>
+<!-- Progress Indicator -->
+<div class="w-full bg-surface-variant h-3 rounded-full mb-2 overflow-hidden">
+<div class="bg-success-mint h-full rounded-full" style="width: 75%;"></div>
+</div>
+<div class="flex justify-between text-xs font-label-sm text-on-surface-variant">
+<span>Ordered</span>
+<span>Shipped</span>
+<span class="text-primary font-semibold">Delivery</span>
+</div>
+<button class="w-full mt-6 bg-surface-variant text-primary py-3 rounded-full font-label-md text-label-md hover:bg-surface-dim transition-colors">
+                        Track Package
+                    </button>
+</div>
+<!-- Pending Reviews Compact Card -->
+<div class="bg-surface rounded-[22px] p-6 card-shadow">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-accent-coral" data-icon="star">star</span>
+                        Pending Reviews
+                    </h3>
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-16 bg-surface-variant rounded-md overflow-hidden flex-shrink-0">
+<img alt="Small Book" class="w-full h-full object-cover" data-alt="A small, square thumbnail image of a children's book featuring a cartoon dinosaur. The book is photographed against a bright, warm white background with soft, natural lighting, maintaining a clean and cohesive e-commerce look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCUNH5qKRtHpGvCouYet6cPiO4tv7ydRoocdAHCo4O7yxayFproDcrxzofWqnmQfimj0lZ2_Db7vqHD-ck-KZhc3hbcw2xcNxRvrJSC4zVxJ8Te-tDxeQzwS5NbH3tm2GBXqb6vvDrhBpwkIMYORCDfsA7apukkKvKAE5qnh7b1idZ-IZ5xmFetlebhhZ-tL_ZtpxiMp4sPo3jaPzb_bLZkZi64Rpfl94U-GsVldxnabOESP4W9etoMUBqQAegKdgS_In66q0WanBF"/>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary">Dino Adventures</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Finished by Adam</p>
+</div>
+</div>
+<button class="w-full bg-secondary text-on-secondary py-3 rounded-full font-label-md text-label-md hover:bg-secondary-container transition-colors shadow-sm">
+                        Write a Review
+                    </button>
+</div>
+<!-- Mascot Integration Component -->
+<div class="mt-8 flex items-start gap-4 p-4 bg-primary-fixed rounded-[22px] card-shadow border border-primary-fixed-dim">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-surface flex-shrink-0 border-2 border-surface">
+<img alt="Lumi the Owl" class="w-full h-full object-cover" data-alt="A cropped, circular portrait of a friendly, cartoonish owl named Lumi, designed in a soft pastel color palette of blues and warm creams. The owl looks helpful and inviting, perfectly suited for an educational children's platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxwj96mVdBgDKDooy4JVKDsQhl-xwItdE7TacIgVtcQWDHpc_79dc9e0OtVqdcO3tRqUOS3fbMtKzOEMcU-QXHCtvT2S5K91IXSMwqj9NeKHdh2aYCDJag7tLA2Z4KK1RVK8E9k7BDxVUzcU7pfoudM7DmlQGEyeA1zQL08XFB7sK9moXUas3WSphLhehtggi_MwcikVw2OiaaVeEmIkbskzjsCIrg679rpU_oopaZyq_lfvPJGpdZYpvda8mZUhNw1tg7A-8FJ8zC"/>
+</div>
+<div class="bg-surface p-4 rounded-2xl rounded-tl-none relative shadow-sm">
+<!-- Speech bubble tail pointer -->
+<div class="absolute -left-2 top-4 w-4 h-4 bg-surface transform rotate-45"></div>
+<p class="font-body-md text-body-md text-primary relative z-10">
+<strong>Hi Sarah!</strong> Adam is making great progress. He might enjoy these new science books next!
+                        </p>
+</div>
+</div>
+</aside>
+</div>
+</main>
+</div>

@@ -1,0 +1,198 @@
+<style>
+        body { background-color: theme('colors.background'); }
+        .rating-star:hover ~ .rating-star { opacity: 0.3; }
+        .rating-star { transition: color 0.2s, transform 0.1s; cursor: pointer; }
+        .rating-star.active { color: theme('colors.tertiary-fixed-dim'); font-variation-settings: 'FILL' 1; }
+        .rating-container:hover .rating-star { color: theme('colors.tertiary-fixed-dim'); opacity: 1; }
+    </style><div data-screen class="text-on-background min-h-screen flex">
+<!-- NavigationDrawer (Left Nav) -->
+<aside class="hidden md:flex flex-col bg-surface rounded-r-xl h-full w-80 shadow-xl fixed left-0 top-0 z-50">
+<!-- Header -->
+<div class="p-6 flex flex-col items-start border-b border-surface-variant">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center mb-4 overflow-hidden">
+<img alt="Lumi the Owl Mascot" class="w-full h-full object-cover" data-alt="A friendly, stylized cartoon owl mascot in an educational setting, rendered in bright, approachable colors suitable for a children's learning platform. Soft lighting, modern flat illustration style with subtle gradients, emphasizing a warm and inviting educational aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXeo_LDejX913RKlNElghdaR0Of2uij21Lf7qCEeL9T_1g697ysdQFK2vLqyMFX50vDcn1xBXrcbswelQ3PTxMBNjprDe4xvu7zR22ECNrwfacu9ngHge-W_TmgnkhN4G3Cc3V_tqbLzpTY4GvilerE8hxD4LQmLlITBhXMmki2jnIh-0b5Y9OF1LQhPBl59CIe0wHMZZUoCJTWn7OBvmdcQr4wbUbQalaSZ0WAgVoqTYdjNo2W1l863h7pYc35yZ8sMsA6erI_4Nh"/>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Lumi the Owl</h2>
+<p class="font-label-md text-label-md text-on-surface-variant">Your Reading Guide</p>
+</div>
+<!-- Navigation Links -->
+<nav class="flex-1 py-4 flex flex-col gap-2 px-2">
+<!-- Active Tab -->
+<a class="flex items-center gap-4 px-4 py-3 bg-primary-container text-on-primary-container rounded-full mx-2 font-label-md text-label-md opacity-80" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">book</span>
+                Books
+            </a>
+<!-- Inactive Tabs -->
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined">star</span>
+                Teachers' Choice
+            </a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined">school</span>
+                School Years
+            </a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined">sell</span>
+                Sale
+            </a>
+</nav>
+<!-- Bottom Settings/Log out area -->
+<div class="p-4 border-t border-surface-variant">
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-variant rounded-full font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+                Settings
+            </a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 ml-[320px] px-margin-desktop py-12">
+<div class="max-w-container-max mx-auto">
+<!-- Header Section -->
+<div class="mb-12">
+<a class="inline-flex items-center gap-2 text-on-surface-variant hover:text-secondary transition-colors mb-6 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined text-sm">arrow_back</span>
+                    Back to Book Details
+                </a>
+<h1 class="font-display-lg text-display-lg text-primary mb-2">Review 'The Magic Sounds Adventure'</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Share your thoughts to help other parents and educators find the perfect books.</p>
+</div>
+<!-- Review Form Container -->
+<div class="bg-surface rounded-[22px] shadow-sm p-8 md:p-12 relative overflow-hidden">
+<!-- Mascot Integration -->
+<div class="absolute top-8 right-8 hidden lg:flex items-start gap-4">
+<div class="bg-surface-container-low px-4 py-3 rounded-2xl rounded-tr-none shadow-sm max-w-xs">
+<p class="font-body-md text-body-md text-on-surface">Your honest feedback helps our community grow! Tell us what your child enjoyed most.</p>
+</div>
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center shrink-0">
+<img alt="Lumi" class="w-full h-full object-cover rounded-full" data-alt="A friendly, stylized cartoon owl mascot in an educational setting, rendered in bright, approachable colors suitable for a children's learning platform. Soft lighting, modern flat illustration style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGjlWE3TayJRf-QwZ8MPMtS0nzkbLoJNugdkT0hZMQf1ucW40DAzdmnDcykMlv254sFcIh3lyJwTaEb44JiwY4EM93Pz1IbUXahkIn8Y6Fopa5E3_fZKSdDmiI-9vNI99x3PTbW3Z4_llEh_9UYx_A2Y1GbDpYO4fbK7kytpwaYJBAIng3nClp8wKlvijsrXkF7ouFbXWhT72wOZcnXDeiaQRhlQhQOgY4FWpFPW_fySasocGWY41aua0wgPgsoh05R3UqJ7hFJQn5"/>
+</div>
+</div>
+<form class="space-y-12 max-w-2xl">
+<!-- Star Ratings Section -->
+<div class="space-y-8">
+<h3 class="font-headline-sm text-headline-sm text-primary border-b border-surface-variant pb-4">Ratings</h3>
+<!-- Overall Rating -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Overall Experience</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">How would you rate this book overall?</p>
+</div>
+<div class="flex gap-1 rating-container group text-outline-variant text-3xl flex-row-reverse justify-end sm:justify-start">
+<span class="material-symbols-outlined rating-star" data-value="5">star</span>
+<span class="material-symbols-outlined rating-star" data-value="4">star</span>
+<span class="material-symbols-outlined rating-star" data-value="3">star</span>
+<span class="material-symbols-outlined rating-star" data-value="2">star</span>
+<span class="material-symbols-outlined rating-star" data-value="1">star</span>
+</div>
+</div>
+<!-- School Suitability -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-1">School Suitability</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Is the content appropriate for the target age?</p>
+</div>
+<div class="flex gap-1 rating-container group text-outline-variant text-3xl flex-row-reverse justify-end sm:justify-start">
+<span class="material-symbols-outlined rating-star" data-value="5">star</span>
+<span class="material-symbols-outlined rating-star" data-value="4">star</span>
+<span class="material-symbols-outlined rating-star" data-value="3">star</span>
+<span class="material-symbols-outlined rating-star" data-value="2">star</span>
+<span class="material-symbols-outlined rating-star" data-value="1">star</span>
+</div>
+</div>
+<!-- Clarity -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Clarity</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Is the language and story easy to follow?</p>
+</div>
+<div class="flex gap-1 rating-container group text-outline-variant text-3xl flex-row-reverse justify-end sm:justify-start">
+<span class="material-symbols-outlined rating-star" data-value="5">star</span>
+<span class="material-symbols-outlined rating-star" data-value="4">star</span>
+<span class="material-symbols-outlined rating-star" data-value="3">star</span>
+<span class="material-symbols-outlined rating-star" data-value="2">star</span>
+<span class="material-symbols-outlined rating-star" data-value="1">star</span>
+</div>
+</div>
+<!-- Enjoyment -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Enjoyment</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Did your child have fun reading this?</p>
+</div>
+<div class="flex gap-1 rating-container group text-outline-variant text-3xl flex-row-reverse justify-end sm:justify-start">
+<span class="material-symbols-outlined rating-star" data-value="5">star</span>
+<span class="material-symbols-outlined rating-star" data-value="4">star</span>
+<span class="material-symbols-outlined rating-star" data-value="3">star</span>
+<span class="material-symbols-outlined rating-star" data-value="2">star</span>
+<span class="material-symbols-outlined rating-star" data-value="1">star</span>
+</div>
+</div>
+</div>
+<!-- Written Review Section -->
+<div class="space-y-6">
+<h3 class="font-headline-sm text-headline-sm text-primary border-b border-surface-variant pb-4">Written Review</h3>
+<div class="space-y-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="review-title">Review Title</label>
+<input class="w-full bg-surface border border-outline-variant rounded-[14px] px-4 py-3 font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-shadow" id="review-title" placeholder="Summarize your experience (e.g., 'Great for learning phonics!')" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="review-body">Detailed Review</label>
+<textarea class="w-full bg-surface border border-outline-variant rounded-[14px] px-4 py-3 font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-shadow resize-y" id="review-body" placeholder="What did you and your child like or dislike? How did it help with their reading journey?" rows="6"></textarea>
+</div>
+</div>
+</div>
+<!-- Profile & Privacy Section -->
+<div class="space-y-6 bg-surface-container-low p-6 rounded-xl">
+<h3 class="font-headline-sm text-headline-sm text-primary">Display Settings</h3>
+<div class="space-y-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="display-name">Display Name</label>
+<input class="w-full max-w-sm bg-surface border border-outline-variant rounded-[14px] px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-shadow" id="display-name" type="text" value="Sarah M."/>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">This name will appear publicly with your review.</p>
+</div>
+<div class="flex items-center gap-3 pt-4">
+<button aria-checked="true" class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-secondary transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2" role="switch" type="button">
+<span class="translate-x-5 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+<span class="font-body-md text-body-md text-on-surface">Show my verified purchaser badge</span>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-4 pt-6">
+<button class="h-12 px-8 bg-secondary hover:bg-secondary-container text-on-primary font-label-md text-label-md font-bold rounded-full transition-colors flex items-center gap-2 shadow-sm" type="submit">
+                            Submit Review
+                            <span class="material-symbols-outlined text-sm">send</span>
+</button>
+<button class="h-12 px-8 bg-transparent text-secondary hover:bg-surface-variant font-label-md text-label-md font-bold rounded-full transition-colors" type="button">
+                            Cancel
+                        </button>
+</div>
+</form>
+</div>
+</div>
+</main>
+<script>
+        // Simple star rating interaction
+        document.querySelectorAll('.rating-container').forEach(container => {
+            const stars = container.querySelectorAll('.rating-star');
+            
+            stars.forEach(star => {
+                star.addEventListener('click', () => {
+                    const value = parseInt(star.getAttribute('data-value'));
+                    
+                    // Reset all
+                    stars.forEach(s => s.classList.remove('active'));
+                    
+                    // Activate clicked and all previous (which are next siblings due to flex-row-reverse)
+                    let current = star;
+                    while(current) {
+                        current.classList.add('active');
+                        current = current.nextElementSibling;
+                    }
+                });
+            });
+        });
+    </script>
+</div>

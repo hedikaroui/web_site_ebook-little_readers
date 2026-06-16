@@ -1,0 +1,91 @@
+<div data-screen class="text-on-background min-h-screen flex flex-col font-body-md text-body-md">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-container-high text-primary dark:text-inverse-primary docked full-width top-0 shadow-sm dark:shadow-none shadow-sm flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full z-40 sticky">
+<div class="flex items-center gap-4">
+<button aria-label="Menu" class="material-symbols-outlined hover:text-secondary-container transition-colors scale-95 active:scale-90 transition-transform md:hidden">menu</button>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-secondary-fixed-dim">Little Readers</span>
+</div>
+<!-- Desktop Nav -->
+<nav aria-label="Main Navigation" class="hidden md:flex items-center gap-6">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-secondary-container transition-colors font-label-md text-label-md" href="#">Books</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-secondary-container transition-colors font-label-md text-label-md" href="#">Teachers' Choice</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-secondary-container transition-colors font-label-md text-label-md" href="#">School Years</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-secondary-container transition-colors font-label-md text-label-md" href="#">Sale</a>
+</nav>
+<div class="flex items-center gap-4">
+<button aria-label="Search" class="material-symbols-outlined hover:text-secondary-container transition-colors scale-95 active:scale-90 transition-transform">search</button>
+<button aria-label="Shopping Cart" class="material-symbols-outlined hover:text-secondary-container transition-colors scale-95 active:scale-90 transition-transform">shopping_cart</button>
+<button aria-label="Person" class="material-symbols-outlined hover:text-secondary-container transition-colors scale-95 active:scale-90 transition-transform">person</button>
+</div>
+</header>
+<main class="flex-grow w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Hero Section -->
+<section class="py-[64px] md:py-[80px] flex flex-col md:flex-row items-center gap-[48px]">
+<div class="flex-1 space-y-6">
+<h1 class="font-display-lg text-display-lg text-primary">The Right Book for Every Young Learner.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">Discover curated educational books designed to spark imagination and support primary school learning, guided by teachers and loved by kids.</p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-secondary text-on-secondary rounded-full px-8 py-3 font-label-md text-label-md hover:bg-secondary-container transition-colors flex items-center gap-2">
+                        Find a Book
+                    </button>
+<button class="border border-outline text-primary rounded-full px-8 py-3 font-label-md text-label-md hover:bg-surface-variant transition-colors">
+                        Browse All Books
+                    </button>
+</div>
+</div>
+<div class="flex-1 relative flex justify-center">
+<img alt="Lumi the Owl waving" class="w-full max-w-[400px] object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAohj2-DsVntgtwCZAO9DrGR6GhQZ2VTLJdealtjxeq6FG0pmWr2nfW-7QZxsjR7a9mG-ndjwvnsF9OOVkF6yiqu9EKk54ZI4ffraKrLtOjIDJ6ilLiv8varZryciXiN-wvD8xcfRxGzKFkrH0epgXj1_boANVxcrtIoBir0WOY37jcvUc4MbA7iuM5ipDH-pL5U6kfnqUtgHETReA77dk9Qt8-0AOrosqi20ackTa1vu86EB8c_mUabw9jwBb34EuZ-nQeYrJsLjE3"/>
+<div class="absolute top-8 right-8 bg-surface rounded-[16px] p-4 shadow-sm max-w-[200px] hidden md:block">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Hoot! Let's find your next favorite story together!</p>
+</div>
+</div>
+</section>
+<!-- Quick Book Finder -->
+<section class="mb-[80px]">
+<div class="bg-surface rounded-xl p-8 shadow-sm flex flex-col md:flex-row items-end gap-6 border border-surface-variant">
+<div class="flex-1 w-full space-y-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant">School Level</label>
+<div class="relative">
+<select class="w-full bg-surface border border-outline text-on-surface rounded-[14px] px-4 py-3 appearance-none focus:ring-2 focus:ring-secondary focus:border-secondary font-body-md text-body-md">
+<option>Select Level</option>
+<option>Early Years</option>
+<option>Year 1-2</option>
+<option>Year 3-4</option>
+<option>Year 5-6</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-outline">expand_more</span>
+</div>
+</div>
+<div class="flex-1 w-full space-y-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Subject or Interest</label>
+<div class="relative">
+<select class="w-full bg-surface border border-outline text-on-surface rounded-[14px] px-4 py-3 appearance-none focus:ring-2 focus:ring-secondary focus:border-secondary font-body-md text-body-md">
+<option>Select Subject</option>
+<option>Maths</option>
+<option>Science</option>
+<option>Phonics</option>
+<option>Storybooks</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-outline">expand_more</span>
+</div>
+</div>
+<button class="w-full md:w-auto bg-secondary text-on-secondary rounded-full px-8 py-3 font-label-md text-label-md hover:bg-secondary-container transition-colors whitespace-nowrap h-[48px]">
+                    Show Suitable Books
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-highest text-primary dark:text-inverse-primary full-width bg-surface-container-low dark:bg-surface-container-highest flat flex flex-col md:flex-row justify-between items-center gap-gutter px-margin-mobile md:px-margin-desktop py-12 w-full mt-auto">
+<div class="font-headline-sm text-headline-sm text-primary font-bold">Little Readers</div>
+<nav aria-label="Footer Navigation" class="flex gap-6 mt-4 md:mt-0">
+<a class="text-on-surface-variant hover:text-secondary underline transition-all font-label-md text-label-md" href="#">About</a>
+<a class="text-on-surface-variant hover:text-secondary underline transition-all font-label-md text-label-md" href="#">Contact</a>
+<a class="text-on-surface-variant hover:text-secondary underline transition-all font-label-md text-label-md" href="#">FAQ</a>
+<a class="text-on-surface-variant hover:text-secondary underline transition-all font-label-md text-label-md" href="#">Socials</a>
+</nav>
+<div class="mt-6 md:mt-0 font-body-md text-body-md text-on-surface-variant text-center md:text-right">
+            © 2024 Little Readers Educational Bookshop
+        </div>
+</footer>
+</div>
